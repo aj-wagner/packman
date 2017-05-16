@@ -55,18 +55,29 @@
 	
 	$(document).ready(function(){
 		$('#board').html(buildBoardStr(board));
+
 	});
 
 	function collisionDetection(pos){
+
+		//wall coordinates
+		var wallTopCoor = $('.wallTop').position().top;
+		var wallLowerCoor = $('.wallBottom').position().top;
+		var wallLeftCoor = $('.wallLeft').position().left;
+		var wallRightCoor = $('.wallRight').position().left;
+
         //check pac man coordinates
-        var coor = $('#pacman img').position()
-        if(pos=="left" && coor.left<306){
+        var pacCoorLR = $('#pacman img').position().left;
+        var pacCoorUD = $('#pacman img').position().top;
+
+
+        if(pos=="left" && pacCoorLR-40< wallLowerCoor){
             return false
-        }else if(pos=="right" && coor.left>898){
+        }else if(pos=="right" && pacCoorLR+40>wallRightCoor){
             return false
-        }else if(pos=="up" && coor.top<78){
+        }else if(pos=="up" && pacCoorUD-58>wallTopCoor){
             return false
-        }else if(pos=="down" && coor.top > 360){
+        }else if(pos=="down" && pacCoorUD+58<wallLowerCoor){
             return false
         }else{
             return true;
@@ -76,7 +87,7 @@
 	document.onkeydown = function(e){
 		//35 LR
 		//55 U&D
-		console.log($('#pacman img').position().left);
+
 		//left
 		if(e.keyCode == 37 && collisionDetection('left')){
 			$('#pacman img').animate({"left": "-=350%" }, "slow");
@@ -87,11 +98,11 @@
 		}
 		//up
 		else if(e.keyCode == 38 && collisionDetection('up')){
-			$('#pacman img').animate({"top": "-=12.5%" }, "slow");
+			$('#pacman img').animate({"top": "-=550%" }, "slow");
 		}
 		//down
 		else if(e.keyCode == 40 && collisionDetection('down')){
-			$('#pacman img').animate({"top": "+=12.5%" }, "slow");
+			$('#pacman img').animate({"top": "+=550%" }, "slow");
 		}
 	}
 
