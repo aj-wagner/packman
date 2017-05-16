@@ -1,0 +1,54 @@
+*{
+	outline: 1px dotted red;
+	margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+#wrapper
+{
+	background-color: #4c4949;
+	width: 1035px;
+	margin: 35px auto;
+}
+
+    
+ .board{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+ }  
+
+.wallTop{
+	border-bottom: 5px solid blue;
+}
+.wallLeft{
+	border-right: 5px solid blue;
+	height: 55px;
+}
+.wallBottom{
+	border-top: 5px solid blue;	
+}
+.wallRight{
+	border-left: 5px solid blue;
+	height: 55px;
+}
+.dot{
+	color: yellow;
+	vertical-align: top;
+	padding-top: 20px;
+}
+
+#pacMan{
+	display: inline-block;
+	width: 35px;
+	height: 55px;
+	background: url('./images/pacman.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.corner{}
+.row{
+	text-align: center;
+}
