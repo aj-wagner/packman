@@ -9,7 +9,7 @@
 
 	var board = [
 		[1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
-		[5, 0, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 3],
+		[5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 3],
 		[5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 3],
 		[5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 3],
 		[5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 3],		
@@ -43,9 +43,9 @@
 				else if(board[i][c] == 6){
 					boardHTMLstr += "<div class='board dot'>&#176;</div>"
 				}
-				else{
-					boardHTMLstr += "<div id='pacMan'></div>"
-				}
+				//else{
+				//	boardHTMLstr += "<div id='pacMan'></div>"
+				//}
 			}
 			boardHTMLstr += "</div>";
 		}
@@ -53,5 +53,5 @@
 		return boardHTMLstr;
 	}
 		$(document).ready(function(){
-			$('#wrapper').html(buildBoardStr(board));
+			$('#board').html(buildBoardStr(board));
 		});
