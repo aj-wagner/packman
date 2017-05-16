@@ -5,6 +5,13 @@
     border: 0px;
 }
 
+.Game_header {
+	background-color: #FFFFFF;
+	width: 1035px;
+	margin: 35px auto;
+	z-index:-1;
+}
+
 #wrapper
 {
 	background-color: #4c4949;
@@ -55,7 +62,7 @@
 	width:30px;
 	height:30px;
 	position:relative;
-	top:-360px;
+	top:-359px;
 	left:205px;
 }
 /*top:-360px;
