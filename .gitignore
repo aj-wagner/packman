@@ -1,0 +1,2 @@
+# Don't check in the node_modules
+node_modules
