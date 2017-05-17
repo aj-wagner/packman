@@ -1,0 +1,23 @@
+/*login CSS*/
+
+*{
+	/*outline: 1px dotted red;*/
+	margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+#wrapper
+{
+	width: 800px;
+	margin: 0 auto;
+}
+
+#loginImg{
+	width: 800px;
+}
+
+#loginHolder{
+	background: #000000;
+	margin: 0 auto;
+}

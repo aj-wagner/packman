@@ -2,11 +2,17 @@
 <html>
 <head>
 	<title>PacMan Login Screen</title>
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
 </head>
 <body>
-	<form action="/login/results" method="post">
-		<input type="text" name="playerName" placeholder="enter player name">
-		<input type="submit" value="submit">
-	</form>
+	<div id="wrapper">
+	<img id="loginImg" src="../images/loginScreen.png" alt="loginscreen">
+		<div id="loginHolder">
+			<form action="/login/results" method="post">
+				<input type="text" name="playerName" placeholder="enter player name">
+				<input type="submit" value="submit">
+		</form>
+		</div>
+	</div>
 </body>
 </html>
