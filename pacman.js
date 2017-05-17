@@ -163,13 +163,13 @@
 		}
 		//up
 		else if(e.keyCode == 38 && updateLocation("up") != false){
-			$('#pacman img').animate({"top": "-=550%" }, "fast");
+			$('#pacman img').animate({"top": "-=600%" }, "fast");
 			updateScore();
 			updateBoard();
 		}
 		//down
 		else if(e.keyCode == 40 && updateLocation("down") != false ){
-			$('#pacman img').animate({"top": "+=550%" }, "fast");	
+			$('#pacman img').animate({"top": "+=600%" }, "fast");	
 			updateScore();
 			updateBoard();
 		}
