@@ -21,5 +21,20 @@
 #loginHolder{
 	position: relative 400px -400px;
 	background: #000000;
-	margin: -10px auto;
+	margin: 0 auto;
+}
+
+#submitBtn{
+	border-radius: 7px;
+	font-size: x-large;
+	background-color: red; 
+	width: 100px;
+}
+
+#playerNameBx{
+	font-size: x-large;
+	border: 2px solid red;
+	border-radius: 7px;
+	padding-left: 10px;
+	padding-bottom: 2px
 }
